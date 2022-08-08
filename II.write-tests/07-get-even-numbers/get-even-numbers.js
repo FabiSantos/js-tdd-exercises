@@ -1,7 +1,3 @@
-function getEven(numbers) {
-  return numbers.filter(function(number) {
-    return number % 2 === 0;
-  });
-}
+const getEven = (numbers) => numbers.filter(number => number % 2 === 0);
 
-module.exports = getEven;
+module.exports = { getEven };
