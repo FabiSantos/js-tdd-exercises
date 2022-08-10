@@ -10,14 +10,14 @@ describe("get-second-third function", () => {
     //assert
     expect(output).toEqual(expected);
   });
-/*   it("also test that the original array has not changed", () => {
+  it("given the input [90, 5, 11, 8, 6], should not change the input value", () => {
     //arrange
     const input = [90, 5, 11, 8, 6];
     const expected = [90, 5, 11, 8, 6];
     //act
-    const output = getSecondThird(input);
+    getSecondThird(input);
     //assert
-    expect(output).toEqual(expected);
-  }); */
+    expect(input).toEqual(expected);
+  });
 
 });
