@@ -6,7 +6,7 @@ const paintShop = (cars, newColorCar) => {
     if (!isObject) {
         throw new Error("¿Ocurrió un error");
     }
-    let newColor = "debe seleccionar el color";
+    let newColor;
     if (!newColorCar) {
         return newColor = "Debe seleccionar el color";
     }
@@ -14,7 +14,7 @@ const paintShop = (cars, newColorCar) => {
     /*   let newArrayCars = cars.map((x) => x); */
     const newArrayCars = JSON.parse(JSON.stringify(cars));
     newArrayCars[0].colour = newColorCar;
-    
+
     return newArrayCars;
 };
 
