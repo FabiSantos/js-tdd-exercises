@@ -92,19 +92,25 @@ describe('calculator function', () => {
     it('Given input of a number greater than or equal to 1000, should throw new error', () => {
         // arrange
         const input = 1000;
-        //act
         const output = () => calculator(input);
-        //assert
+        //act and assert
         expect(output).toThrow(Error);
     });
 
     it('Given the input "100, 4, -20", should throw new error', () => {
         // arrange
         const input = "100, 4, -20";
-        //act
         const output = () => calculator(input);
-        //assert
+        //act and assert
         expect(output).toThrow(Error);
     });
-   
+
+    it('Given the input null, should throw new error', () => {
+        // arrange
+        const input = null;
+        const output = () => calculator(input);
+        //act and assert
+        expect(output).toThrow(Error);
+    });
+
 });
