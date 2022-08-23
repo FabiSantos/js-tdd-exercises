@@ -16,13 +16,13 @@ const passwordVerifier = (numbers) => {
         return numbers;
     }
     else if (isString.match(upperCaseLetters) && isString.match(isNumber) || isString.match(isNumber) && isString.match(upperCaseLetters)) {
-        return "Su contraseña debe contener letra minúscula";
+        return "la contraseña debe tener al menos una letra minúscula";
     }
     else if (isString.match(lowerCaseLetters) && isString.match(isNumber) || isString.match(isNumber) && isString.match(lowerCaseLetters)) {
-        return "Su contraseña debe contener letra mayúscula";
+        return "la contraseña debe tener al menos una letra mayúscula";
     }
     else if (isString.match(lowerCaseLetters) && isString.match(upperCaseLetters)) {
-        return "Su contraseña debe contener numero";
+        return "la contraseña debe tener al menos un número.";
     } else {
         return `
         1.- la contraseña debe tener más de 8 caracteres; 
