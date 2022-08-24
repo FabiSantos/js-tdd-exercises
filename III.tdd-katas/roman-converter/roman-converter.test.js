@@ -1,13 +1,3 @@
-//Para determinar el valor de cualquier número, usaban la suma directa.
-// I es equivalente a 1.
-// II es equivalente a 1 + 1, o 2.
-// VIIII es equivalente a 5 + 1 + 1 + 1 + 1, o 9.
-//Vamos a comenzar a escribir una función `convertToNewRoman`. 
-//Cuando se pasa un número entero entre 1 y 3000, esta función devolverá una cadena
-// que contiene el número romano antiguo adecuado. 
-//En otras palabras, `convertToNewRoman(4)` debería devolver la cadena `'IIII'`.
-//No se preocupe por verificar si el número pasado al método está entre 1 y 3000 o no.
-
 const { convertToOldRoman, convertToNewRoman } = require("./roman-converter");
 
 describe('Old roman numerals to arabic converter function', () => {
